@@ -4,6 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
   <link rel='shortcut icon' href='./icon.png'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
@@ -16,12 +17,32 @@
         <ul>
           <li>
             <a href='https://beta.atcoder.jp/users/ikd' target='_blank'>AtCoder</a>
+            <ul>
+              <li>
+                rating:
+                <span id='atcoder' class='atcoder current'>...</span>
+              </li>
+              <li>
+                max-rating:
+                <span class='atcoder max'></span>
+              </li>
+            </ul>
           </li>
           <li>
             <a href='https://yukicoder.me/users/1206' target='_blank'>yukicoder</a>
           </li>
           <li>
-            <a href='http://codeforces.com/profile/ikd' target='_blank'>Codeforces</a>   
+            <a href='http://codeforces.com/profile/ikd' target='_blank'>Codeforces</a>
+            <ul>
+              <li>
+                rating:
+                <span class='codeforces current'>...</span>
+              </li>
+              <li>
+                max-rating:
+                <span class='codeforces max'>...</span>
+              </li>
+            </ul>
           </li>
           <li>
             <a href='https://csacademy.com/user/ikd' target='_blank'>CSAcademy</a>
