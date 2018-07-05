@@ -28,10 +28,12 @@ function get_color(oj, rating) {
 }
 
 const username = 'ikd'
-const cf_endpoint = 'http://codeforces.com/api/user.info'
+const cf_endpoint = `http://codeforces.com/api/user.info?handles=${username}`
 const ac_endpoint = `https://beta.atcoder.jp/users/${username}/history/json`
 
-axios.get(cf_endpoint, { params: { handles: username } })
+const dummy = 'https://script.google.com/macros/s/AKfycbzSFMM_St_VhociIILfWgjYE4Yv7ZBsx2jFQdkwYXweza0X6Uk/exec'
+
+axios.get(dummy, { params: { url: cf_endpoint } })
   .then((result) => {
     if (result.data.status === 'OK') {
       const data = result.data.result[0]
@@ -61,7 +63,6 @@ axios.get(cf_endpoint, { params: { handles: username } })
     console.error(err)
   })
 
-const dummy = 'https://script.google.com/macros/s/AKfycbzSFMM_St_VhociIILfWgjYE4Yv7ZBsx2jFQdkwYXweza0X6Uk/exec'
 axios.get(dummy, { params: { url: ac_endpoint } })
   .then((result) => {
     if (result.status === 200 && result.data.length > 0) {
