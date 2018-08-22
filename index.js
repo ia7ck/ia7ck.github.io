@@ -33,10 +33,13 @@ const ac_endpoint = `https://beta.atcoder.jp/users/${username}/history/json`
 
 const dummy = 'https://script.google.com/macros/s/AKfycbzSFMM_St_VhociIILfWgjYE4Yv7ZBsx2jFQdkwYXweza0X6Uk/exec'
 
-axios.get(dummy, { params: { url: cf_endpoint } })
+fetch(cf_endpoint)
+  .then((response) => {
+    return response.json()
+  })
   .then((result) => {
-    if (result.data.status === 'OK') {
-      const data = result.data.result[0]
+    if (result.status === 'OK') {
+      const data = result.result[0]
       const current_rating = data.rating
       const max_rating = data.maxRating
       const current_color = get_color('codeforces', current_rating)
@@ -44,51 +47,33 @@ axios.get(dummy, { params: { url: cf_endpoint } })
       const current_rank = data.rank
       const max_rank = data.maxRank
 
-      const elems = document.getElementsByClassName('codeforces')
-      for (let i = 0; i < elems.length; i += 1) {
-        const list = elems[i].classList
-        if (list.contains('current')) {
-          elems[i].innerHTML = `${current_rating} (${current_rank})`
-          elems[i].style.color = current_color
-        } else if (list.contains('max')) {
-          elems[i].innerHTML = `${max_rating} (${max_rank})`
-          elems[i].style.color = max_color
-        }
-      }
-    } else {
-      console.error('error')
+      const cfRatingElement = document.querySelector('.codeforces.current')
+      cfRatingElement.innerHTML = `${current_rating} (${current_rank})`
+      cfRatingElement.style.color = current_color
+      const cfMaxRatingElement = document.querySelector('.codeforces.max')
+      cfMaxRatingElement.innerHTML = `${max_rating} (${max_rank})`
+      cfMaxRatingElement.style.color = max_color
     }
   })
-  .catch((err) => {
-    console.error(err)
-  })
 
-axios.get(dummy, { params: { url: ac_endpoint } })
+fetch(dummy + "?url=" + ac_endpoint)
+  .then((response) => {
+    return response.json()
+  })
   .then((result) => {
-    if (result.status === 200 && result.data.length > 0) {
-      const history = result.data
-      const current_rating = history[history.length - 1].NewRating;
-      const max_rating = history.reduce((ret, elem) => {
+    if (result.length > 0) {
+      const current_rating = result[result.length - 1].NewRating;
+      const max_rating = result.reduce((ret, elem) => {
         return Math.max(ret, elem.NewRating)
       }, 0)
       const current_color = get_color('atcoder', current_rating)
       const max_color = get_color('atcoder', max_rating)
 
-      const elems = document.getElementsByClassName('atcoder')
-      for (let i = 0; i < elems.length; i += 1) {
-        const list = elems[i].classList
-        if (list.contains('current')) {
-          elems[i].innerHTML = `${current_rating}`
-          elems[i].style.color = current_color
-        } else if (list.contains('max')) {
-          elems[i].innerHTML = `${max_rating}`
-          elems[i].style.color = max_color
-        }
-      }
-    } else {
-      console.error('error')
+      const acRatingElement = document.querySelector('.atcoder.current')
+      acRatingElement.innerHTML = current_rating
+      acRatingElement.style.color = current_color
+      const acMaxRatingElement = document.querySelector('.atcoder.max')
+      acMaxRatingElement.innerHTML = max_rating
+      acMaxRatingElement.style.color = max_color
     }
-  })
-  .catch((err) => {
-    console.error(err)
   })
