@@ -30,8 +30,10 @@ function get_color(oj, rating) {
 const username = 'ikd'
 const cf_endpoint = `http://codeforces.com/api/user.info?handles=${username}`
 const ac_endpoint = `https://beta.atcoder.jp/users/${username}/history/json`
+const csa_endpoint = `https://csacademy.com/user/${username}`
 
 const dummy = 'https://script.google.com/macros/s/AKfycbzSFMM_St_VhociIILfWgjYE4Yv7ZBsx2jFQdkwYXweza0X6Uk/exec'
+const dummy2 = "https://script.google.com/macros/s/AKfycbx3rXTgOUj6clqPXrc6egT1aIeY4qhVus2Qsa3164mG__Evoa0/exec"
 
 fetch(dummy + "?url=" + cf_endpoint)
   .then((response) => {
@@ -76,4 +78,20 @@ fetch(dummy + "?url=" + ac_endpoint)
       acMaxRatingElement.innerHTML = max_rating
       acMaxRatingElement.style.color = max_color
     }
+  })
+
+fetch(dummy2 + "?url=" + csa_endpoint)
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    const history = result.state.publicuser[0].contestHistory
+    const current_rating = Math.floor(history[0].rating)
+    const max_rating = history.reduce((ret, elem) => {
+      return Math.max(ret, Math.floor(elem.rating))
+    }, 0)
+    const csaRatingElement = document.querySelector('.csacademy.current')
+    csaRatingElement.innerHTML = current_rating
+    const csaMaxRatingElement = document.querySelector('.csacademy.max')
+    csaMaxRatingElement.innerHTML = max_rating
   })
