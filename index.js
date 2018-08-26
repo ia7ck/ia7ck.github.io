@@ -33,7 +33,7 @@ const ac_endpoint = `https://beta.atcoder.jp/users/${username}/history/json`
 
 const dummy = 'https://script.google.com/macros/s/AKfycbzSFMM_St_VhociIILfWgjYE4Yv7ZBsx2jFQdkwYXweza0X6Uk/exec'
 
-fetch(cf_endpoint)
+fetch(dummy + "?url=" + cf_endpoint)
   .then((response) => {
     return response.json()
   })
