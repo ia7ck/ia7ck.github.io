@@ -8,7 +8,7 @@
     - [スライド](https://drive.google.com/file/d/1iwhs_D_a_XD2BK5SfrJg1OAb6HBLaNNV/view?usp=sharing)
     - [レポジトリ](https://github.com/ia7ck/matcha)
 
-- [gbp-call](https://gbp-call.herokuapp.com/)
+- [gbp-call (キャラクター間の呼称の管理)](https://gbp-call.herokuapp.com/)
     - [スライド](https://drive.google.com/file/d/14ZtdX30Axs2dSEZsUQSyr7wRMtMKMo57/view?usp=sharing)
 
 - [CSA ume (解いた問題の管理)](https://ia7ck0.appspot.com/csa-ume)
