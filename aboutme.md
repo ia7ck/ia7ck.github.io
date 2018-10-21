@@ -1,7 +1,7 @@
 ### 作ったもの
 
 - [アルゴリズム・データ構造 可視化](https://ia7ck.github.io/visualization/)
-    - [スライド](https://docs.google.com/presentation/d/1p46e59URGBxsInGMMAZNAPctcMoFZ0kV0HZSNLxmStg/edit?usp=sharing)
+    - [スライド](https://docs.google.com/presentation/d/e/2PACX-1vRtTnj4v7Zs-Jbalaxd1DMbgJvDJm97bb0IaXTKPAVJIkD9hgreFrK0g_tAs6yzU4CBvojoQmPlPIGz/pub?start=true&loop=true&delayms=10000)
     - [レポジトリ](https://github.com/ia7ck/visualization)
 
 - [matcha (チャット)](https://matcha-f1496.firebaseapp.com/)
