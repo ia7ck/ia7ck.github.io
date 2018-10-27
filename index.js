@@ -49,12 +49,10 @@ fetch(dummy + "?url=" + cf_endpoint)
       const current_rank = data.rank
       const max_rank = data.maxRank
 
-      const cfRatingElement = document.querySelector('.codeforces.current')
-      cfRatingElement.innerHTML = `${current_rating} (${current_rank})`
-      cfRatingElement.style.color = current_color
-      const cfMaxRatingElement = document.querySelector('.codeforces.max')
-      cfMaxRatingElement.innerHTML = `${max_rating} (${max_rank})`
-      cfMaxRatingElement.style.color = max_color
+      setRating('.codeforces.current', `${current_rating} (${current_rank})`)
+      setColor('.codeforces.current', current_color)
+      setRating('.codeforces.max', `${max_rating} (${max_rank})`)
+      setColor('.codeforces.max', max_color)
     }
   })
 
@@ -71,12 +69,10 @@ fetch(dummy + "?url=" + ac_endpoint)
       const current_color = get_color('atcoder', current_rating)
       const max_color = get_color('atcoder', max_rating)
 
-      const acRatingElement = document.querySelector('.atcoder.current')
-      acRatingElement.innerHTML = current_rating
-      acRatingElement.style.color = current_color
-      const acMaxRatingElement = document.querySelector('.atcoder.max')
-      acMaxRatingElement.innerHTML = max_rating
-      acMaxRatingElement.style.color = max_color
+      setRating('.atcoder.current', current_rating)
+      setColor('.atcoder.current', current_color)
+      setRating('.atcoder.max', max_rating)
+      setColor('.atcoder.max', max_color)
     }
   })
 
@@ -90,8 +86,17 @@ fetch(dummy2 + "?url=" + csa_endpoint)
     const max_rating = history.reduce((ret, elem) => {
       return Math.max(ret, Math.floor(elem.rating))
     }, 0)
-    const csaRatingElement = document.querySelector('.csacademy.current')
-    csaRatingElement.innerHTML = current_rating
-    const csaMaxRatingElement = document.querySelector('.csacademy.max')
-    csaMaxRatingElement.innerHTML = max_rating
+
+    setRating('.csacademy.current', current_rating)
+    setRating('.csacademy.max', max_rating)
   })
+
+function setRating(selector, text) {
+  const el = document.querySelector(selector)
+  el.innerHTML = text
+}
+
+function setColor(selector, color) {
+  const el = document.querySelector(selector)
+  el.style.color = color
+}
