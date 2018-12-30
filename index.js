@@ -28,7 +28,8 @@ function get_color(oj, rating) {
 }
 
 const username = 'ikd'
-const cf_endpoint = `http://codeforces.com/api/user.info?handles=${username}`
+const cf_username = 'ia7ck'
+const cf_endpoint = `http://codeforces.com/api/user.info?handles=${cf_username}`
 const ac_endpoint = `https://beta.atcoder.jp/users/${username}/history/json`
 const csa_endpoint = `https://csacademy.com/user/${username}`
 
