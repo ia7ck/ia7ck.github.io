@@ -1,12 +1,12 @@
 ### 作ったもの
 
-- [アルゴリズム・データ構造 可視化](https://ia7ck.github.io/visualization/)
+- [アルゴリズム・データ構造の可視化](https://ia7ck.github.io/visualization/)
     - [スライド](https://docs.google.com/presentation/d/e/2PACX-1vRtTnj4v7Zs-Jbalaxd1DMbgJvDJm97bb0IaXTKPAVJIkD9hgreFrK0g_tAs6yzU4CBvojoQmPlPIGz/pub?start=false&loop=true&delayms=3000)
-    - [レポジトリ](https://github.com/ia7ck/visualization)
+    - [リポジトリ](https://github.com/ia7ck/visualization)
 
-- [matcha (チャット)](https://matcha-f1496.firebaseapp.com/)
+- [matcha (数式が使えるチャット)](https://matcha-f1496.firebaseapp.com/)
     - [スライド](https://drive.google.com/file/d/1iwhs_D_a_XD2BK5SfrJg1OAb6HBLaNNV/view?usp=sharing)
-    - [レポジトリ](https://github.com/ia7ck/matcha)
+    - [リポジトリ](https://github.com/ia7ck/matcha)
 
 - [gbp-call (キャラクター間の呼称の管理)](https://gbp-call.herokuapp.com/)
     - [スライド](https://drive.google.com/file/d/14ZtdX30Axs2dSEZsUQSyr7wRMtMKMo57/view?usp=sharing)
@@ -15,8 +15,9 @@
 
 ### コンテスト
 
-- [ACM-ICPC 2018 国内予選 103位](https://icpc.iisf.or.jp/2018-yokohama/1st-round-result/)
-- [第6回 TechFUL 全国ハッカソン 1位](https://triple-four.hatenablog.com/entry/2018/10/04/144736)
+- 2018-07-06 [ACM-ICPC 2018 国内予選 103位](https://icpc.iisf.or.jp/2018-yokohama/1st-round-result/)
+- 2018-09-19 [第6回 TechFUL 全国ハッカソン 1位](https://triple-four.hatenablog.com/entry/2018/10/04/144736)
+- 2019-01-19 DISCO presents ディスカバリーチャンネル コードコンテスト2019 本戦 101位
 
 ### 出題
 
