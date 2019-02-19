@@ -5,11 +5,11 @@
     - [リポジトリ](https://github.com/ia7ck/visualization)
 
 - [matcha (数式が使えるチャット)](https://matcha-f1496.firebaseapp.com/)
-    - [スライド](https://drive.google.com/file/d/1iwhs_D_a_XD2BK5SfrJg1OAb6HBLaNNV/view?usp=sharing)
+    - [スライド](https://slideship.com/users/@ia7ck/unlisted_presentations/2019/02/CBGgq5sxoQzsWZ1p25ES1u/?hash=wBJEtvpZUjyaPXSTRZCTOoMoUJgUnwmY)
     - [リポジトリ](https://github.com/ia7ck/matcha)
 
 - [gbp-call (キャラクター間の呼称の管理)](https://gbp-call.herokuapp.com/)
-    - [スライド](https://drive.google.com/file/d/14ZtdX30Axs2dSEZsUQSyr7wRMtMKMo57/view?usp=sharing)
+    - [スライド](https://slideship.com/users/@ia7ck/unlisted_presentations/2019/02/Pmb6RccrutPWitioJe9NYw/?hash=ZZGEjsvaXRRynsRLSpVxpwcwBKJhqILR)
 
 - [CSA ume (解いた問題の管理)](https://ia7ck0.appspot.com/csa-ume)
 
