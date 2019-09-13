@@ -1,12 +1,13 @@
 @font-face {
   font-family: 'ia7ck';
-  src:  url('fonts/ia7ck.eot?qlsn1r');
-  src:  url('fonts/ia7ck.eot?qlsn1r#iefix') format('embedded-opentype'),
-    url('fonts/ia7ck.ttf?qlsn1r') format('truetype'),
-    url('fonts/ia7ck.woff?qlsn1r') format('woff'),
-    url('fonts/ia7ck.svg?qlsn1r#ia7ck') format('svg');
+  src:  url('fonts/ia7ck.eot?g187al');
+  src:  url('fonts/ia7ck.eot?g187al#iefix') format('embedded-opentype'),
+    url('fonts/ia7ck.ttf?g187al') format('truetype'),
+    url('fonts/ia7ck.woff?g187al') format('woff'),
+    url('fonts/ia7ck.svg?g187al#ia7ck') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
