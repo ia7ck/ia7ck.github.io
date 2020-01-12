@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <title>ia7ck</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cutestrap/1.3.1/css/cutestrap.min.css" /> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Avenir, "Avenir Next", "Helvetica Neue", "Segoe UI", Verdana, Helvetica, Arial, "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -42,6 +41,20 @@
       margin: 0;
       font-weight: normal;
     }
+
+    .list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .link .title {
+      display: block;
+      text-align: center;
+    }
+
+    .footer {
+      font-size: 0.9rem;
+    }
   </style>
   <base target="_blank">
   <link rel="stylesheet" href="./namazu.css">
@@ -54,23 +67,34 @@
         <h3 class="heading">ia7ck <span class="icon-namazu"></span></h3>
       </section>
       <section>
-        <h5 class="sub-heading">SNS</h5>
-        <ul>
-          <li>Twitter: <a href="https://twitter.com/ia7ck">ia7ck</a></li>
-          <li>GitHub: <a href="https://github.com/ia7ck">ia7ck</a></li>
-          <li>ブログ: <a href="https://poyopoyoyon.hatenablog.com">1日9時間寝たい</a></li>
-        </ul>
-      </section>
-      <section>
-        <h5 class="sub-heading">競技プログラミング💻</h5>
-        <ul>
-          <li>AtCoder: <a href="https://atcoder.jp/users/ikd">ikd</a></li>
-          <li>yukicoder: <a href="https://yukicoder.me/users/1206">ikd</a></li>
-          <li>Codeforces: <a href="https://codeforces.com/profile/ia7ck">ia7ck</a></li>
-          <li>CSAcademy: <a href="https://csacademy.com/user/ikd">ikd</a></li>
+        <h5 class="sub-heading">Links</h5>
+        <ul class="list clearfix">
+          <li class="col">
+            <a class="link" href="https://twitter.com/ia7ck" title="ia7ck | Twitter">
+              <span class="title">Twitter</span>
+              <img src="https://img.icons8.com/bubbles/100/000000/twitter-circled.png" alt="Twitter">
+            </a>
+          </li>
+          <li class="col">
+            <a class="link" href="https://github.com/ia7ck" title="ia7ck | GitHub">
+              <span class="title">GitHub</span>
+              <img src="https://img.icons8.com/bubbles/100/000000/github.png" alt="GitHub">
+            </a>
+          </li>
+          <li class="col">
+            <a class="link" href="https://poyopoyoyon.hatenablog.com" title="1日9時間寝たい | はてなブログ">
+              <span class="title">Blog</span>
+              <img src="https://img.icons8.com/bubbles/100/000000/edit-file.png" alt="Blog">
+            </a>
+          </li>
         </ul>
       </section>
     </main>
+    <footer class="footer">
+      <a target="_blank" href="https://icons8.com/icons/set/twitter-circled">Twitter Circled</a>, <a target="_blank"
+        href="https://icons8.com/icons/set/github">GitHub</a> and other icons by <a target="_blank"
+        href="https://icons8.com">Icons8</a>
+    </footer>
   </div>
 </body>
 
