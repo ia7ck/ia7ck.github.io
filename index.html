@@ -12,6 +12,13 @@
       font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif;
       color: #404040;
       line-height: 1.5rem;
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
     }
 
     a {
@@ -56,6 +63,10 @@
       text-align: center;
     }
 
+    .link .icon {
+      width: 75px;
+    }
+
     .footer {
       font-size: 0.9rem;
     }
@@ -72,37 +83,38 @@
       <section>
         <h5 class="sub-heading">Links</h5>
         <ul class="list clearfix">
-          <li class="col">
+          <li class="col px2">
             <a class="link" href="https://twitter.com/ia7ck" title="ia7ck | Twitter">
               <span class="title">Twitter</span>
-              <img src="https://img.icons8.com/bubbles/100/000000/twitter-circled.png" alt="Twitter">
+              <img class="icon" src="svg/twitter.svg" alt="Twitter">
             </a>
           </li>
-          <li class="col">
+          <li class="col px2">
             <a class="link" href="https://github.com/ia7ck" title="ia7ck | GitHub">
               <span class="title">GitHub</span>
-              <img src="https://img.icons8.com/bubbles/100/000000/github.png" alt="GitHub">
+              <img class="icon" src="svg/github.svg" alt="GitHub">
             </a>
           </li>
-          <li class="col">
-            <a class="link" href="https://poyopoyoyon.hatenablog.com" title="1日9時間寝たい | はてなブログ">
-              <span class="title">Blog</span>
-              <img src="https://img.icons8.com/bubbles/100/000000/edit-file.png" alt="Blog">
-            </a>
-          </li>
-          <li class="col">
+          <li class="col px2">
             <a class="link" href="https://atcoder.jp/users/ikd" title="ikd | AtCoder">
               <span class="title">AtCoder</span>
-              <img src="https://img.icons8.com/bubbles/100/000000/line-chart.png" alt="AtCoder">
+              <img class="icon" src="svg/puzzle.svg" alt="AtCoder">
+            </a>
+          </li>
+          <li class="col px2">
+            <a class="link" href="https://poyopoyoyon.hatenablog.com" title="1日9時間寝たい | はてなブログ">
+              <span class="title">Blog</span>
+              <img class="icon" src="svg/blog.svg" alt="Blog">
             </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a target="_blank" href="https://icons8.com/icons/set/twitter-circled">Twitter Circled</a>, <a target="_blank"
-        href="https://icons8.com/icons/set/github">GitHub</a> and other icons by <a target="_blank"
-        href="https://icons8.com">Icons8</a>
+      <div>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </div>
     </footer>
   </div>
 </body>
